@@ -1,2 +1,5 @@
-"# Curso_Python_Paola_Pintos_2022100212"  
 
+# Seminario de Python
+Alumna: Paola Pintos
+
+Matricula: 2022100212
