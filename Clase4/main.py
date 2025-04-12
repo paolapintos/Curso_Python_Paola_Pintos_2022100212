@@ -15,6 +15,11 @@ def hello():
     #definimos una ruta para el endpoint raiz "/" que responde a solicitudes get
     return 'Hello Wordl'
     # al acceder a la raiz del sitio devuelve este mensaje
+@app.route('/hola2', methods=['GET'])
+def hola():
+    #definimos una ruta para el endpoint raiz "/" que responde a solicitudes get
+    return 'Hola 2'
+    # al acceder a la raiz del sitio devuelve este mensaje
 
 if __name__ == "__main__":
     #este bloque se ejecuta solo si el script se ejecuta directamente (no importa como modulo)
