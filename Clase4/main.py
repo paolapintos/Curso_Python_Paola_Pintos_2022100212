@@ -4,7 +4,7 @@
 #codificacion UFT-8 para permitir caracteres especioles
 
 from flask import Flask, jsonify, request
-#importamos flask para crear la app web, jsonify para devolver respuestas en JSON
+#importamopython --versions flask para crear la app web, jsonify para devolver respuestas en JSON
 #Y request para mejorar datos entramos (por ejemplo, de formularoos o JSON)
 
 app = Flask(__name__)
