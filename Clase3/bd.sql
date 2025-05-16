@@ -12,5 +12,3 @@ insert into users (username, password) values ('pao3', 'pass3' );
 
 
 
-alter user 'unida' @ '%' IDENTIFIED with mysql_native_password by 'unida123';
-FLUSH privileges;
