@@ -2,13 +2,13 @@ from flask import Blueprint, request, jsonify
 import mysql.connector
 from mysql.connector import Error
 
-login2 = Blueprint('login2', _name_)
+login2 = Blueprint('login2', __name__)
 
 #configuracion de la base de datos
 DB_CONFIG = {
     'host': 'localhost',
-    'user': 'unida',
-    'password': 'unida123',
+    'user': 'root',
+    'password': '1234',
     'database': 'jaguarete',
     'port':'3306'
 }
