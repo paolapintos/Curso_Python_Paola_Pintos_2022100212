@@ -41,3 +41,5 @@ def validar_cliente(ci):
         accion = "Error interno"
     
     return codRes, menRes, accion
+
+
