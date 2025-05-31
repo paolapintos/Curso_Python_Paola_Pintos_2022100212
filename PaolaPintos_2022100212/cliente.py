@@ -43,3 +43,4 @@ def inicializarcliente(ci):
         accion = "Error interno"
     
     return codRes, menRes, accion
+
