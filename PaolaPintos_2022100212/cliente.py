@@ -1,10 +1,12 @@
 from flask import Blueprint, request, jsonify
 
 cliente = Blueprint('cliente', __name__)
+
 @cliente.route('/cliente', methods=['POST'])
 def verificar_cliente():
     ci = request.json.get('ci')
-    codRes, menRes, accion = validar_cliente(ci)
+
+    codRes, menRes, accion = inicializarcliente(ci)
 
     salida = {
         'accion': accion,
@@ -14,14 +16,14 @@ def verificar_cliente():
     }
     return jsonify(salida)
 
-def validar_cliente(ci):
-    clientes_existentes = ["6213141"]
+def inicializarcliente(ci):
+    cliente = "6213141"
     codRes = "SIN_ERROR"
     menRes = "OK"
 
     try:
-        print("Verificando cliente")
-        if ci in clientes_existentes:
+        print("Verificar cliente")
+        if ci == cliente:
             print("Cliente encontrado")
             accion = "Success"
             codRes = "SIN_ERROR"
