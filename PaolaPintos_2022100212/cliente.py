@@ -41,6 +41,6 @@ def inicializarcliente(ci):
         codRes = "ERROR"
         menRes = "Msg: " + str(e)
         accion = "Error interno"
+
     
     return codRes, menRes, accion
-fewfawfw
